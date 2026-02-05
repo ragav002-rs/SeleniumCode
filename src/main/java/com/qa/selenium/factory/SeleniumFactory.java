@@ -5,8 +5,11 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SeleniumFactory {
@@ -22,22 +25,35 @@ public class SeleniumFactory {
 
 	public WebDriver initBrowser(Properties prop, String baseURLKey) {
 		String browsername = prop.getProperty("browser").trim();
-	
+		boolean isHeadless = Boolean.parseBoolean(prop.getProperty("headless", "false").trim());
+
 		switch (browsername.toLowerCase()) {
 		case "chrome":
-			tldriver.set(new ChromeDriver());
+			ChromeOptions chromeOptions = new ChromeOptions();
+			if (isHeadless) {
+				chromeOptions.addArguments("--headless=new");
+			}
+			tldriver.set(new ChromeDriver(chromeOptions));
 			break;
 		case "firefox":
-			tldriver.set(new FirefoxDriver());
+			FirefoxOptions firefoxOptions = new FirefoxOptions();
+			if (isHeadless) {
+				firefoxOptions.addArguments("-headless");
+			}
+			tldriver.set(new FirefoxDriver(firefoxOptions));
 		break;
 		case "edge":
-			tldriver.set(new EdgeDriver());
+			EdgeOptions edgeOptions = new EdgeOptions();
+			if (isHeadless) {
+				edgeOptions.addArguments("--headless=new");
+			}
+			tldriver.set(new EdgeDriver(edgeOptions));
 		break;
 		default:
-		System.out.println("Please pass the right Browsername");
-		break;
-	}
-		
+			throw new IllegalArgumentException("Please pass the right Browsername: " + browsername);
+		}
+
+		System.out.println("Launching browser=" + browsername + ", headless=" + isHeadless);
 		getWebDriver().get(prop.getProperty(baseURLKey).trim());
 		return getWebDriver();
 		
