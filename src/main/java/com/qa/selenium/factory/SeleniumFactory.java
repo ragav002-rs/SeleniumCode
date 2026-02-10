@@ -41,6 +41,9 @@ public class SeleniumFactory {
 				co.addArguments("--headless=new");
 				co.addArguments("--window-size=1920,1080");
 				co.addArguments("--disable-gpu");
+				co.addArguments("--disable-dev-shm-usage");
+				co.addArguments("--remote-allow-origins=*");
+				co.addArguments("--disable-notifications");
 			}
 			
 			tldriver.set(new ChromeDriver(co));
@@ -72,8 +75,8 @@ public class SeleniumFactory {
 		break;
 	}
 		
-		getWebDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-		getWebDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		getWebDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+		getWebDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		getWebDriver().get(prop.getProperty(baseURLKey).trim());
 		return getWebDriver();
 		
