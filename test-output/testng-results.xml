@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-04T12:26:44 IST" name="Regression SeleniumPOM suite" finished-at="2026-02-04T12:27:00 IST" duration-ms="16324">
+  <suite started-at="2026-02-10T11:36:06 IST" name="Regression SeleniumPOM suite" finished-at="2026-02-10T11:36:43 IST" duration-ms="36716">
     <groups>
     </groups>
-    <test started-at="2026-02-04T12:26:44 IST" name="Search Page Test" finished-at="2026-02-04T12:26:56 IST" duration-ms="11828">
+    <test started-at="2026-02-10T11:36:06 IST" name="Search Page Test" finished-at="2026-02-10T11:36:15 IST" duration-ms="8749">
       <class name="com.qa.selenium.test.SearchPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.selenium.test.SearchPageTest@4409e975]" started-at="2026-02-04T12:26:44 IST" name="setup" finished-at="2026-02-04T12:26:52 IST" duration-ms="8050" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.selenium.test.SearchPageTest@7c098bb3]" started-at="2026-02-10T11:36:06 IST" name="setup" finished-at="2026-02-10T11:36:14 IST" duration-ms="7654" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,27 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchPageUrl()[pri:1, instance:com.qa.selenium.test.SearchPageTest@4409e975]" started-at="2026-02-04T12:26:52 IST" name="searchPageUrl" finished-at="2026-02-04T12:26:55 IST" duration-ms="2748" status="PASS">
+        <test-method signature="searchPageUrl()[pri:1, instance:com.qa.selenium.test.SearchPageTest@7c098bb3]" started-at="2026-02-10T11:36:14 IST" name="searchPageUrl" finished-at="2026-02-10T11:36:14 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchPageUrl -->
-        <test-method signature="searchPageTitle()[pri:2, instance:com.qa.selenium.test.SearchPageTest@4409e975]" started-at="2026-02-04T12:26:55 IST" name="searchPageTitle" finished-at="2026-02-04T12:26:55 IST" duration-ms="27" status="PASS">
+        <test-method signature="searchPageTitle()[pri:2, instance:com.qa.selenium.test.SearchPageTest@7c098bb3]" started-at="2026-02-10T11:36:14 IST" name="searchPageTitle" finished-at="2026-02-10T11:36:14 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchPageTitle -->
-        <test-method signature="performSearch()[pri:3, instance:com.qa.selenium.test.SearchPageTest@4409e975]" started-at="2026-02-04T12:26:55 IST" name="performSearch" finished-at="2026-02-04T12:26:56 IST" duration-ms="667" status="PASS">
+        <test-method signature="performSearch()[pri:3, instance:com.qa.selenium.test.SearchPageTest@7c098bb3]" started-at="2026-02-10T11:36:14 IST" name="performSearch" finished-at="2026-02-10T11:36:15 IST" duration-ms="751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- performSearch -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.selenium.test.SearchPageTest@4409e975]" started-at="2026-02-04T12:26:56 IST" name="TearDown" finished-at="2026-02-04T12:26:56 IST" duration-ms="271" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.selenium.test.SearchPageTest@7c098bb3]" started-at="2026-02-10T11:36:15 IST" name="TearDown" finished-at="2026-02-10T11:36:15 IST" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.qa.selenium.test.SearchPageTest -->
     </test> <!-- Search Page Test -->
-    <test started-at="2026-02-04T12:26:44 IST" name="Login Page Test" finished-at="2026-02-04T12:27:00 IST" duration-ms="16324">
+    <test started-at="2026-02-10T11:36:06 IST" name="Login Page Test" finished-at="2026-02-10T11:36:43 IST" duration-ms="36716">
       <class name="com.qa.selenium.test.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.selenium.test.LoginPageTest@18c5069b]" started-at="2026-02-04T12:26:44 IST" name="setup" finished-at="2026-02-04T12:26:56 IST" duration-ms="12269" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T11:36:06 IST" name="setup" finished-at="2026-02-10T11:36:32 IST" duration-ms="25924" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,19 +49,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTitle()[pri:0, instance:com.qa.selenium.test.LoginPageTest@18c5069b]" started-at="2026-02-04T12:26:56 IST" name="loginTitle" finished-at="2026-02-04T12:26:56 IST" duration-ms="67" status="PASS">
+        <test-method signature="loginTitle()[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T11:36:32 IST" name="loginTitle" finished-at="2026-02-10T11:36:32 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTitle -->
-        <test-method signature="loginUrl()[pri:0, instance:com.qa.selenium.test.LoginPageTest@18c5069b]" started-at="2026-02-04T12:26:56 IST" name="loginUrl" finished-at="2026-02-04T12:26:56 IST" duration-ms="13" status="PASS">
+        <test-method signature="loginUrl()[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T11:36:32 IST" name="loginUrl" finished-at="2026-02-10T11:36:32 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUrl -->
-        <test-method signature="performSignin()[pri:0, instance:com.qa.selenium.test.LoginPageTest@18c5069b]" started-at="2026-02-04T12:26:56 IST" name="performSignin" finished-at="2026-02-04T12:27:00 IST" duration-ms="3667" status="PASS">
+        <test-method signature="performLogin()[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T11:36:32 IST" name="performLogin" finished-at="2026-02-10T11:36:43 IST" duration-ms="10462" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- performSignin -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.selenium.test.LoginPageTest@18c5069b]" started-at="2026-02-04T12:27:00 IST" name="TearDown" finished-at="2026-02-04T12:27:00 IST" duration-ms="277" status="PASS">
+        </test-method> <!-- performLogin -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T11:36:43 IST" name="TearDown" finished-at="2026-02-10T11:36:43 IST" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

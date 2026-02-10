@@ -19,10 +19,14 @@ public class LoginPage {
 	
 	Logger logger = LogManager.getLogger(LoginPage.class);
 	
-	private By login_btn = By.xpath("//div[@aria-label='user']");
+/*	private By login_btn = By.xpath("//div[@aria-label='user']");
 	private By email_field = By.name("account");
 	private By password_field = By.name("password");
 	private By signin_btn = By.xpath("//button[text()='Sign in']");
+*/	
+	private By username_field = By.name("username");
+	private By password_field = By.name("password");
+	private By login_btn = By.xpath("//button[text()=' Login ']");
 	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -40,10 +44,10 @@ public class LoginPage {
 		return title;
 	}
 	
-	public String PerformLogin(String emailID, String password) {
+/*	public String performLoginXiamoi(String emailID, String password) {
 		
-		//w = new WebDriverWait(driver, Duration.ofSeconds(10));
-	//	w.until(ExpectedConditions.visibilityOfElementLocated(singin_btn));
+		w = new WebDriverWait(driver, Duration.ofSeconds(20));
+		w.until(ExpectedConditions.visibilityOfElementLocated(login_btn));
 	//	Actions a = new Actions(driver);
 	//	a.moveToElement(driver.findElement(singin_btn)).perform();
 		driver.findElement(login_btn).click();
@@ -53,6 +57,17 @@ public class LoginPage {
 		String signintitle = driver.getTitle();
 		logger.debug("Page title during signin:" + signintitle);
 		return signintitle;
-	}
+	}  
+*/		
+	
+	public String performLoginOrangeHrm(String emailID , String password) {
 		
+		driver.findElement(username_field).sendKeys(emailID);
+		driver.findElement(password_field).sendKeys(password);
+		driver.findElement(login_btn).click();
+		String logintitle = driver.getTitle();
+		logger.debug("Page title after loginin:" + logintitle);
+		return logintitle;
+	}
+	
 }

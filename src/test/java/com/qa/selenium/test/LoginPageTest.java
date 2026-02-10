@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.qa.selenium.base.BaseTest;
 import com.qa.selenium.constants.AppConstants;
 
-public class LoginPageTest extends BaseTest{
+public class LoginPageTest extends BaseTest {
 
 	@Test
 	public void loginUrl() {
@@ -17,13 +17,19 @@ public class LoginPageTest extends BaseTest{
 	@Test
 	public void loginTitle() {
 		String actuallogintitle = loginpage.getPageTitle();
-		Assert.assertEquals(actuallogintitle, AppConstants.LOGIN_PAGE_TITLE);
+		Assert.assertEquals(actuallogintitle, AppConstants.LOGIN_PAGE_TITLE_ORANGEHRM);	
 	}
 	
-	@Test
+/*	
 	public void performSignin() {
-		String actualsignintitle = loginpage.PerformLogin(prop.getProperty("emailID"), prop.getProperty("password"));
-		Assert.assertEquals(actualsignintitle, AppConstants.SIGN_IN_TITLE);
+		String actualsignintitle = loginpage.performLoginXiamoi(prop.getProperty("emailID"), prop.getProperty("password"));
+		Assert.assertEquals(actualsignintitle, AppConstants.SIGN_IN_TITLE_XIAOMI);
+	}
+*/	
+	@Test
+	public void performLogin() {
+		String actuallogintitle = loginpage.performLoginOrangeHrm(prop.getProperty("emailID"), prop.getProperty("password"));
+		Assert.assertEquals(actuallogintitle, AppConstants.SIGN_IN_TITLE_ORANGEHRM);	
 	}
 	
 }

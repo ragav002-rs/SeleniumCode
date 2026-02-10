@@ -113,12 +113,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_SeleniumPOM_suite" title="com.qa.selenium.test.SearchPageTest" class="method navigator-link" hash-for-method="performSearch">performSearch</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_SeleniumPOM_suite" title="com.qa.selenium.test.LoginPageTest" class="method navigator-link" hash-for-method="performLogin">performLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_SeleniumPOM_suite" title="com.qa.selenium.test.LoginPageTest" class="method navigator-link" hash-for-method="performSignin">performSignin</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_SeleniumPOM_suite" title="com.qa.selenium.test.SearchPageTest" class="method navigator-link" hash-for-method="performSearch">performSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -194,9 +194,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="performSignin">
-                  </a> <!-- performSignin -->
-                  <span class="method-name">performSignin</span>
+                  <a name="performLogin">
+                  </a> <!-- performLogin -->
+                  <span class="method-name">performLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -265,34 +265,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'performSignin')
+data.setCell(0, 1, 'performLogin')
 data.setCell(0, 2, 'com.qa.selenium.test.LoginPageTest')
-data.setCell(0, 3, 3667);
+data.setCell(0, 3, 10462);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'searchPageUrl')
+data.setCell(1, 1, 'performSearch')
 data.setCell(1, 2, 'com.qa.selenium.test.SearchPageTest')
-data.setCell(1, 3, 2748);
+data.setCell(1, 3, 751);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'performSearch')
+data.setCell(2, 1, 'searchPageUrl')
 data.setCell(2, 2, 'com.qa.selenium.test.SearchPageTest')
-data.setCell(2, 3, 667);
+data.setCell(2, 3, 20);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginTitle')
 data.setCell(3, 2, 'com.qa.selenium.test.LoginPageTest')
-data.setCell(3, 3, 67);
+data.setCell(3, 3, 13);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchPageTitle')
-data.setCell(4, 2, 'com.qa.selenium.test.SearchPageTest')
-data.setCell(4, 3, 27);
+data.setCell(4, 1, 'loginUrl')
+data.setCell(4, 2, 'com.qa.selenium.test.LoginPageTest')
+data.setCell(4, 3, 13);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginUrl')
-data.setCell(5, 2, 'com.qa.selenium.test.LoginPageTest')
-data.setCell(5, 3, 13);
+data.setCell(5, 1, 'searchPageTitle')
+data.setCell(5, 2, 'com.qa.selenium.test.SearchPageTest')
+data.setCell(5, 3, 12);
 window.suiteTableData['Regression_SeleniumPOM_suite']= { tableData: data, tableDiv: 'times-div-Regression_SeleniumPOM_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Regression_SeleniumPOM_suite">
               </div> <!-- times-div-Regression_SeleniumPOM_suite -->
             </div> <!-- times-div -->
@@ -318,55 +318,52 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.selenium.test.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(url-LoginPage)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.qa.selenium.test.SearchPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup(url-SearchPage)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.selenium.test.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setup(url-LoginPage)</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.selenium.test.SearchPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">searchPageUrl</span>
-                <span class="method-start">8091 ms</span>
+                <span class="method-start">7678 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">searchPageTitle</span>
-                <span class="method-start">10845 ms</span>
+                <span class="method-start">7703 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">performSearch</span>
-                <span class="method-start">10874 ms</span>
+                <span class="method-start">7717 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">11543 ms</span>
+                <span class="method-start">8471 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.selenium.test.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginTitle</span>
-                <span class="method-start">12279 ms</span>
+                <span class="method-start">25942 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginUrl</span>
-                <span class="method-start">12348 ms</span>
+                <span class="method-start">25957 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">performSignin</span>
-                <span class="method-start">12363 ms</span>
+                <span class="method-name">performLogin</span>
+                <span class="method-start">25973 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">16033 ms</span>
+                <span class="method-start">36437 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

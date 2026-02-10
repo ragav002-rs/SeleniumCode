@@ -14,7 +14,7 @@ import com.qa.selenium.pages.SearchPage;
 
 public class BaseTest {
 	
-	SeleniumFactory se;
+	protected SeleniumFactory se;
 	protected WebDriver driver;
 	protected LoginPage loginpage;
 	protected SearchPage searchpage;
@@ -28,8 +28,8 @@ public class BaseTest {
 		prop = se.init_prop();
 		driver = se.initBrowser(prop, baseURLKey);
 		loginpage = new LoginPage(driver);
-		searchpage = new SearchPage(driver);	
-	}
+		searchpage = new SearchPage(driver);
+	}	
 	
 	@AfterTest
 	public void TearDown() {
