@@ -16,7 +16,7 @@ public class SearchPage {
 	
 	Logger logger = LogManager.getLogger(SearchPage.class);
 	
-	private By searchicon = By.xpath("//img[@class='search-icon']");
+	private By searchicon = By.cssSelector("span.search-icon");
 	private By searchbox = By.name("q");
 	private By submit = By.xpath("//button[text()='Submit']");
 	
