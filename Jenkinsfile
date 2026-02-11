@@ -34,8 +34,8 @@ pipeline {
             steps {
                 catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
                     dir('selenium-repo') {
-                        git 'https://github.com/ragav002-rs/SeleniumPOMSession'
-                        bat "mvn -f SeleniumPOMSession clean test -Dsurefire.suiteXmlFiles=src/test/resources/TestRunners/testng.xml"
+                        git 'https://github.com/ragav002-rs/SeleniumCode'
+                        bat "mvn -f SeleniumCode clean test -Dsurefire.suiteXmlFiles=src/test/resources/TestRunners/testng.xml"
                     }
                 }
             }  
