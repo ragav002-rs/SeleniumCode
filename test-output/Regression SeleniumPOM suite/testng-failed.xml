@@ -6,8 +6,8 @@
     <classes>
       <class name="com.qa.selenium.test.LoginPageTest">
         <methods>
-          <include name="loginTitle"/>
           <include name="setup"/>
+          <include name="performLogin"/>
           <include name="TearDown"/>
         </methods>
       </class> <!-- com.qa.selenium.test.LoginPageTest -->

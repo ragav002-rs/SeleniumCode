@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-10T12:33:34 IST" name="Regression SeleniumPOM suite" finished-at="2026-02-10T12:34:09 IST" duration-ms="34784">
+  <suite started-at="2026-02-10T16:52:53 IST" name="Regression SeleniumPOM suite" finished-at="2026-02-10T16:53:12 IST" duration-ms="19272">
     <groups>
     </groups>
-    <test started-at="2026-02-10T12:33:34 IST" name="Search Page Test" finished-at="2026-02-10T12:33:42 IST" duration-ms="8265">
+    <test started-at="2026-02-10T16:52:53 IST" name="Search Page Test" finished-at="2026-02-10T16:52:58 IST" duration-ms="5193">
       <class name="com.qa.selenium.test.SearchPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.selenium.test.SearchPageTest@7c098bb3]" started-at="2026-02-10T12:33:34 IST" name="setup" finished-at="2026-02-10T12:33:41 IST" duration-ms="7234" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.selenium.test.SearchPageTest@31e4bb20]" started-at="2026-02-10T16:52:53 IST" name="setup" finished-at="2026-02-10T16:52:57 IST" duration-ms="4379" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,27 +18,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchPageUrl()[pri:1, instance:com.qa.selenium.test.SearchPageTest@7c098bb3]" started-at="2026-02-10T12:33:41 IST" name="searchPageUrl" finished-at="2026-02-10T12:33:41 IST" duration-ms="43" status="PASS">
+        <test-method signature="searchPageUrl()[pri:1, instance:com.qa.selenium.test.SearchPageTest@31e4bb20]" started-at="2026-02-10T16:52:57 IST" name="searchPageUrl" finished-at="2026-02-10T16:52:57 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchPageUrl -->
-        <test-method signature="searchPageTitle()[pri:2, instance:com.qa.selenium.test.SearchPageTest@7c098bb3]" started-at="2026-02-10T12:33:41 IST" name="searchPageTitle" finished-at="2026-02-10T12:33:41 IST" duration-ms="13" status="PASS">
+        <test-method signature="searchPageTitle()[pri:2, instance:com.qa.selenium.test.SearchPageTest@31e4bb20]" started-at="2026-02-10T16:52:57 IST" name="searchPageTitle" finished-at="2026-02-10T16:52:57 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchPageTitle -->
-        <test-method signature="performSearch()[pri:3, instance:com.qa.selenium.test.SearchPageTest@7c098bb3]" started-at="2026-02-10T12:33:41 IST" name="performSearch" finished-at="2026-02-10T12:33:42 IST" duration-ms="656" status="PASS">
+        <test-method signature="performSearch()[pri:3, instance:com.qa.selenium.test.SearchPageTest@31e4bb20]" started-at="2026-02-10T16:52:57 IST" name="performSearch" finished-at="2026-02-10T16:52:58 IST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- performSearch -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.selenium.test.SearchPageTest@7c098bb3]" started-at="2026-02-10T12:33:42 IST" name="TearDown" finished-at="2026-02-10T12:33:42 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.selenium.test.SearchPageTest@31e4bb20]" started-at="2026-02-10T16:52:58 IST" name="TearDown" finished-at="2026-02-10T16:52:58 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.qa.selenium.test.SearchPageTest -->
     </test> <!-- Search Page Test -->
-    <test started-at="2026-02-10T12:33:34 IST" name="Login Page Test" finished-at="2026-02-10T12:34:09 IST" duration-ms="34784">
+    <test started-at="2026-02-10T16:52:53 IST" name="Login Page Test" finished-at="2026-02-10T16:53:12 IST" duration-ms="19272">
       <class name="com.qa.selenium.test.LoginPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T12:33:34 IST" name="setup" finished-at="2026-02-10T12:34:03 IST" duration-ms="29069" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T16:52:53 IST" name="setup" finished-at="2026-02-10T16:53:12 IST" duration-ms="18937" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,19 +49,79 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTitle()[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T12:34:03 IST" name="loginTitle" finished-at="2026-02-10T12:34:03 IST" duration-ms="13" status="PASS">
+        <test-method signature="loginTitle()[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T16:53:12 IST" name="loginTitle" finished-at="2026-02-10T16:53:12 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTitle -->
-        <test-method signature="loginUrl()[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T12:34:03 IST" name="loginUrl" finished-at="2026-02-10T12:34:03 IST" duration-ms="13" status="PASS">
+        <test-method signature="loginUrl()[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T16:53:12 IST" name="loginUrl" finished-at="2026-02-10T16:53:12 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUrl -->
-        <test-method signature="performLogin()[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T12:34:03 IST" name="performLogin" finished-at="2026-02-10T12:34:08 IST" duration-ms="5406" status="PASS">
+        <test-method signature="performLogin()[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T16:53:12 IST" name="performLogin" finished-at="2026-02-10T16:53:12 IST" duration-ms="28" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e6ba8965dde8e7fd5b61830534da524, findElement {value=username, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\ragav\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59061}, goog:processID: 29688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59061/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e6ba8965dde8e7fd5b61830534da524]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e6ba8965dde8e7fd5b61830534da524, findElement {value=username, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\ragav\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59061}, goog:processID: 29688, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59061/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2e6ba8965dde8e7fd5b61830534da524
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+at com.qa.selenium.pages.LoginPage.performLoginOrangeHrm(LoginPage.java:65)
+at com.qa.selenium.test.LoginPageTest.performLogin(LoginPageTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- performLogin -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T12:34:08 IST" name="TearDown" finished-at="2026-02-10T12:34:09 IST" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.qa.selenium.test.LoginPageTest@68fa0ba8]" started-at="2026-02-10T16:53:12 IST" name="TearDown" finished-at="2026-02-10T16:53:12 IST" duration-ms="246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

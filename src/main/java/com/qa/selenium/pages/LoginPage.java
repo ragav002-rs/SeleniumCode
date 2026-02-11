@@ -24,7 +24,7 @@ public class LoginPage {
 	private By password_field = By.name("password");
 	private By signin_btn = By.xpath("//button[text()='Sign in']");
 */	
-	private By username_field = By.xpath("//input[@placeholder='Username']");
+	private By username_field = By.name("username");
 	private By password_field = By.name("password");
 	private By login_btn = By.xpath("//button[text()=' Login ']");
 	

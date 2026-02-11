@@ -17,7 +17,7 @@ pipeline {
             post {
                 always {                 
                     script {
-                        def results = junit testResults: 'smoke-repo/target/surefire-reports/TEST-*.xml'
+                        def results = junit testResults: '**/target/surefire-reports/TEST-*.xml'
                        
                        	smokeStats.total = results.totalCount
                         smokeStats.passed = results.passCount
@@ -42,7 +42,7 @@ pipeline {
             post {
                 always {				
                     script {
-                        def results = junit testResults: 'selenium-repo/SeleniumPOMSession/target/surefire-reports/*.xml'                      
+                        def results = junit testResults: '**/target/surefire-reports/*.xml'                      
 						
 						regStats.total = results.totalCount
                         regStats.passed = results.passCount
